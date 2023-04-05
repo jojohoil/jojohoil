@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             ctx.drawImage(cardImage, 0, 0);
             ctx.font = "bold 3em Arial";
-            ctx.fillStyle = "white";
+            ctx.fillStyle = "green";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.shadowColor = "black";
             ctx.shadowOffsetX = 2;
             ctx.shadowOffsetY = 2;
             ctx.shadowBlur = 4;
-            ctx.fillText(nameDisplay.textContent, canvas.width / 2, canvas.height * 0.8);
+            ctx.fillText(nameDisplay.textContent, canvas.width / 0.3, canvas.height * 3);
 
             const link = document.createElement("a");
             link.href = canvas.toDataURL("image/png");
